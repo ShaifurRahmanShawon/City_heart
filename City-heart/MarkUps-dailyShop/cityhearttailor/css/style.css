@@ -4194,10 +4194,12 @@ img {
   display: inline;
   float: left;
   padding: 50px 100px;
+  margin-bottom: 10px;
   text-align: center;
   width: 100%;
 }
 
+/* Team Area */
 .aa-team-area {
   display: flex;
   flex-wrap: wrap;
@@ -4207,18 +4209,46 @@ img {
 
 .aa-team-single {
   margin-bottom: 30px;
-  padding-top: 10px;
 }
 
-.aa-team-single img {
+.image-container {
+  position: relative;
+  width: 100%;
+  border-radius: 50%;
+}
+
+.image-container img {
   width: 60%;
   height: auto;
   border-radius: 5%;
 }
 
-.aa-team-single h4 {
-  margin-top: 15px;
-  font-size: 18px;
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 70px;
+  right: 0;
+  height: 100%;
+  width: 60%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 5%;
+}
+
+.image-container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
 
 /* Modal */
