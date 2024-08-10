@@ -3288,8 +3288,8 @@ img {
   background-color: #FFF;
   display: inline;
   float: left;
-  padding: 50px 100px;
   text-align: center;
+  margin-bottom: -10px;
   width: 100%;
 }
 #aa-contact .aa-contact-area .aa-contact-top h2 {
@@ -4455,10 +4455,10 @@ z-index: 1;
 .aa-contact-address-left:before {
 content: '';
 position: absolute;
-top: -15px;
+top: -1px;
 left: -15px;
 width: calc(100% + 30px);
-height: calc(100% + 30px);
+height: calc(100% + 70px);
 background: linear-gradient(135deg, #e60721, #00c6ff);
 border-radius: 15px;
 z-index: -1;
@@ -4523,4 +4523,69 @@ margin-right: 10px;
 color: crimson;
 font-size: 1.2em;
 }
+
+/* updated css */
+#menu {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background: transparent;
+  z-index: 1000; /* Ensure it's on top of the banner */
+}
+
+#menu .navbar {
+  margin-bottom: 0;
+}
+
+#aa-banner {
+  position: relative;
+}
+
+.aa-banner-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.aa-logo img {
+  position: relative;
+  z-index: 1001; /* Ensure the logo is above everything else */
+}
+
+.navbar-toggle {
+  z-index: 1001;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: white; /* Adjust this color based on the banner */
+}
+
+/* Back to Top button */
+#back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none; /* Initially hidden */
+  width: 40px;
+  height: 40px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  line-height: 40px;
+  font-size: 20px;
+  border-radius: 50%;
+  z-index: 1000;
+  transition: opacity 0.3s;
+}
+
+#back-to-top:hover {
+  background-color: #555;
+  color: #fff;
+  text-decoration: none;
+}
+
+#back-to-top i {
+  margin-top: 10px;
+}
+
 

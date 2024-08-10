@@ -353,8 +353,8 @@ jQuery(function($){
 });
 
 /* ----------------------------------------------------------- */
-  /*  14. profile
-  /* ----------------------------------------------------------- */
+/*  14. profile
+/* ----------------------------------------------------------- */
 
   function showDetails(name, details) {
     document.getElementById('employeeName').textContent = name;
@@ -367,4 +367,24 @@ function closeDetails() {
 }
 
 
+/* ----------------------------------------------------------- */
+/*  14. Back to Top
+/* ----------------------------------------------------------- */
 
+$(document).ready(function() {
+  // Show or hide the back-to-top button
+  $(window).scroll(function() {
+    if ($(this).scrollTop() > 200) { // Adjust this value as needed
+      $('#back-to-top').fadeIn();
+    } else {
+      $('#back-to-top').fadeOut();
+    }
+  });
+
+  // Scroll smoothly back to the top
+  $('#back-to-top').click(function(e) {
+    e.preventDefault();
+    $('html, body').animate({scrollTop: 0}, 800); // Adjust scroll speed here
+    return false;
+  });
+});
