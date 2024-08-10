@@ -4589,3 +4589,14 @@ font-size: 1.2em;
 }
 
 
+
+#pop-up-img {
+  margin-top: -3px;
+  height: 20px;
+  filter: drop-shadow(2px 2px 5px rgba(255, 255, 255, 0.5));
+  transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+}
+
+#pop-up-img:hover {
+  transform: scale(1.1);
+}
