@@ -1515,6 +1515,11 @@ img {
  Profile SECTION
 ====================*/
 /* Team Area */
+#aa-team {
+    display: inline;
+    float: left;
+    width: 100%;
+}
 .aa-team-top {
   background-color: #d3e0df;
   display: inline;
