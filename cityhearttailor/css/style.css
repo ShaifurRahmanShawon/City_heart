@@ -1619,9 +1619,9 @@ img {
 }
 
 .navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 .navbar-nav {
   display: flex;
@@ -1856,3 +1856,5 @@ font-size: 1.2em;
 #pop-up-img:hover {
   transform: scale(1.1);
 }
+
+
