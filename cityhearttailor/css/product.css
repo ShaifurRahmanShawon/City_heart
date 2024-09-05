@@ -62,19 +62,23 @@
 }
 
 .card-list .card-link .badge {
-  color: #5372F0;
+  /*color: #5372F0;*/
+  color: #B25A2B;
+  background: #ffe3d2;;
   width: fit-content;
   padding: 18px 116px;
   font-size: 0.95rem;
   border-radius: 50px;
   font-weight: 500;
-  background: #DDE4FF;
+  /*background: #DDE4FF;*/
   margin: 16px 0 18px;
 }
 
 .card-list .card-link .badge-designer {
-  color: #B22485;
-  background: #F7DFF5;
+  /*color: #B22485;
+  background: #ffe3d2*/
+  color: #B25A2B;
+  background: #ffe3d2;;
 }
 
 .card-list .card-link .badge-marketer {
@@ -83,13 +87,17 @@
 }
 
 .card-list .card-link .badge-gamer {
-  color: #205C20;
-  background: #D6F8D6;
+  /*color: #205C20;
+  background: #D6F8D6;*/
+  color: #B25A2B;
+  background: #ffe3d2;
 }
 
 .card-list .card-link .badge-editor {
-  color: #856404;
-  background: #fff3cd;
+  /*color: #856404;
+  background: #fff3cd;*/
+  color: #B25A2B;
+  background: #ffe3d2;
 }
 
 .card-list .card-link .card-title {
