@@ -1635,6 +1635,11 @@ img {
 .navbar-nav .login {
   margin-left: auto;
 }
+.btn-success {
+  color: #fff;
+  background-color: #190003;
+  border-color: #a3238e;
+}
 
 .navbar-custom {
   justify-content: space-between;
@@ -1715,7 +1720,9 @@ top: -1px;
 left: -15px;
 width: calc(100% + 30px);
 height: calc(100% + 70px);
-background: linear-gradient(135deg, #ce8250, #9e3f23);
+/*background: linear-gradient(135deg, #ce8250, #9e3f23);*/
+background: linear-gradient(135deg, #C77752, #B0B0B0);
+
 border-radius: 15px;
 z-index: -1;
 box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
