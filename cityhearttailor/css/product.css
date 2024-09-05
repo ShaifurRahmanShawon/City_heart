@@ -63,13 +63,15 @@
 
 .card-list .card-link .badge {
   /*color: #5372F0;*/
-  color: #B25A2B;
-  background: #ffe3d2;;
+  color: #f8f5f3;
+  background: #FF3C00;
+  font-size: 20px;
+  font-weight: bold;
+  font-style: italic;
+  font-family: "Times New Roman", Times, serif;
   width: fit-content;
   padding: 18px 116px;
-  font-size: 0.95rem;
   border-radius: 50px;
-  font-weight: 500;
   /*background: #DDE4FF;*/
   margin: 16px 0 18px;
 }
@@ -77,27 +79,45 @@
 .card-list .card-link .badge-designer {
   /*color: #B22485;
   background: #ffe3d2*/
-  color: #B25A2B;
-  background: #ffe3d2;;
+  color: #f8f5f3;
+  background: #FF3C00;
+  font-size: 20px;
+  font-weight: bold;
+  font-style: italic;
+  font-family: "Times New Roman", Times, serif;
 }
 
 .card-list .card-link .badge-marketer {
-  color: #B25A2B;
-  background: #FFE3D2;
+  /*color: #B25A2B;
+  background: #FFE3D2;*/
+  color: #f8f5f3;
+  background: #FF3C00;
+  font-size: 20px;
+  font-weight: bold;
+  font-style: italic;
+  font-family: "Times New Roman", Times, serif;
 }
 
 .card-list .card-link .badge-gamer {
   /*color: #205C20;
   background: #D6F8D6;*/
-  color: #B25A2B;
-  background: #ffe3d2;
+  color: #f8f5f3;
+  background: #FF3C00;
+  font-size: 20px;
+  font-weight: bold;
+  font-style: italic;
+  font-family: "Times New Roman", Times, serif;
 }
 
 .card-list .card-link .badge-editor {
   /*color: #856404;
   background: #fff3cd;*/
-  color: #B25A2B;
-  background: #ffe3d2;
+  color: #f8f5f3;
+  background: #FF3C00;
+  font-size: 20px;
+  font-weight: bold;
+  font-style: italic;
+  font-family: "Times New Roman", Times, serif;
 }
 
 .card-list .card-link .card-title {
