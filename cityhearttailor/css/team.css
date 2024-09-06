@@ -29,10 +29,12 @@
 .swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
   content: 'next';
   color: black;
+  margin-top: 180px;
 }
 .swiper-button-prev:after, .swiper-rtl .swiper-button-next:after {
   content: 'prev';
   color: black;
+  margin-top: 180px;
 }
 
 .swiper {
