@@ -154,57 +154,6 @@ img {
  NAVBAR SECTION
 ====================*/
 
-#menu {
-  display: inline;
-  float: left;
-  width: 100%;
-  padding: 10px;
-}
-#menu .menu-area {
-  float: left;
-  display: inline;
-  width: 100%;
-}
-#menu .menu-area .navbar-default {
-  background-color: transparent;
-  border: medium none;
-  border-radius: 0;
-  margin-bottom: 0;
-  min-height: auto;
-}
-#menu .menu-area .navbar-default .navbar-nav {
-  display: inline-block;
-  float: left;
-  margin: 0;
-  text-align: center;
-  width: 100%;
-}
-#menu .menu-area .navbar-default .navbar-nav li a {
-  color: #fff;
-  font-size: 16px;
-  padding: 10px 15px;
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  -ms-transition: all 0.5s;
-  -o-transition: all 0.5s;
-  transition: all 0.5s;
-}
-#menu .menu-area .navbar-default .navbar-nav .open a {
-  background-color: #fff;
-}
-#menu .menu-area .navbar-default .navbar-nav .dropdown-menu li a {
-  padding: 8px 15px;
-}
-#menu .menu-area .navbar-default .navbar-nav .dropdown-menu li a:hover, #menu .menu-area .navbar-default .navbar-nav .dropdown-menu li a:focus {
-  color: #fff; 
-}
-#menu .menu-area .navbar-default .navbar-nav .dropdown-menu .dropdown-header {
-  color: #555;
-  display: block;
-  font-size: 16px;
-  padding: 3px 20px;
-  text-transform: uppercase;
-}
 
 /* ALL SECTION */
 /*scrol to top*/
@@ -836,11 +785,6 @@ img {
 @media (max-width: 991px) {
   #aa-header .aa-header-bottom .aa-header-bottom-area .aa-search-box {
     margin-right: 0;
-  }
-
-  #menu .menu-area .navbar-default .navbar-nav li a {
-    font-size: 15px;
-    padding: 8px;
   }
 
   #aa-slider .aa-slider-area .seq-title {
@@ -1789,18 +1733,6 @@ font-size: 1.2em;
 }
 
 /* updated css */
-#menu {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  background: transparent;
-  z-index: 1000; /* Ensure it's on top of the banner */
-}
-
-#menu .navbar {
-  margin-bottom: 0;
-}
-
 #aa-banner {
   position: relative;
 }
@@ -1814,14 +1746,6 @@ font-size: 1.2em;
 .aa-logo img {
   position: relative;
   z-index: 1001; /* Ensure the logo is above everything else */
-}
-
-.navbar-toggle {
-  z-index: 1001;
-}
-
-.navbar-default .navbar-nav > li > a {
-  color: white; /* Adjust this color based on the banner */
 }
 
 /* Back to Top button */
@@ -1850,19 +1774,6 @@ font-size: 1.2em;
 
 #back-to-top i {
   margin-top: 10px;
-}
-
-
-
-#pop-up-img {
-  margin-top: -3px;
-  height: 20px;
-  filter: drop-shadow(2px 2px 5px rgba(255, 255, 255, 0.5));
-  transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
-}
-
-#pop-up-img:hover {
-  transform: scale(1.1);
 }
 
 

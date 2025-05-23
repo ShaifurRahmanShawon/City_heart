@@ -393,13 +393,4 @@ $(document).ready(function() {
 /*  15. Responsive
 /* ----------------------------------------------------------- */
 
-<script>
-  document.addEventListener('DOMContentLoaded', function () {
-    const toggleButton = document.querySelector('.responsive');
-    const navCollapse = document.querySelector('.navbar-collapse');
 
-    toggleButton.addEventListener('click', function () {
-      navCollapse.classList.toggle('show');
-    });
-  });
-</script>
