@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Products - Shop the Best</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <style>
+        /* Custom styles */
+        .hero-slider {
+            height: 80vh;
+            min-height: 500px;
+        }
+        .hero-slider .carousel-item {
+            height: 100%;
+        }
+        .hero-slider img {
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+        }
+        .hero-slider .carousel-caption {
+            background-color: rgba(0, 0, 0, 0.6);
+            border-radius: 10px;
+            padding: 20px;
+            bottom: 20%;
+        }
+        .product-card {
+            transition: transform 0.3s;
+            margin-bottom: 20px;
+        }
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        .feature-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #0d6efd;
+        }
+        .newsletter-section {
+            background-color: #f8f9fa;
+            padding: 0px 0;
+        }
+        footer {
+            padding: 40px 0;
+        }
+    </style>
+    <style>
+        /* Custom CSS for the navbar and hero slider */
+        .navbar {
+            backdrop-filter: blur(10px); /* Blur effect */
+            background-color: rgba(255, 255, 255, 0.713) !important;
+            /* Light background */
+        }
+    
+        #heroSlider {
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .navbar-nav {
+            margin-left: auto; /* Right-align the navigation items */
+        }
+    
+        #heroSlider img {
+            width: 100%;
+        }
+    </style>
+
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand text-uppercase fw-bold" href="#">City Heart</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto fw-bold">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Hero Slider -->
+    <div id="heroSlider">
+        <img src="img/slider/1.jpg" alt="Banner Image" class="img-fluid" />
+    </div>
+    
+
+    <!-- Featured Products -->
+    <section class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2>Our Products</h2>
+                <p class="lead fs-6">Discover the talented individuals behind our success. Each member brings unique skills and passion to our mission.
+                </p>
+            </div>
+            <div class="row">
+                <!-- Product 1 -->
+                <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-6 mb-4">
+                    <div class="card product-card h-100">
+                        <img src="img/man/polo-shirt-6.png" class="card-img-top img-fluid" alt="Ultrabook Pro">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title fs-6 fs-md-5">Ultrabook Pro</h5>
+                            <p class="text-muted small">Lightweight and powerful</p>
+                            <div class="mt-auto d-flex justify-content-between align-items-center">
+                                <span class="h6 fw-bold">$1,299.99</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- Product 2 -->
+                <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-6 mb-4">
+                    <div class="card product-card h-100">
+                        <img src="img/man/polo-shirt-6.png" class="card-img-top img-fluid" alt="DSLR Camera">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title fs-6 fs-md-5">Professional DSLR</h5>
+                            <p class="text-muted small">Capture every moment</p>
+                            <div class="mt-auto d-flex justify-content-between align-items-center">
+                                <span class="h6 fw-bold">$899.99</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- Product 3 -->
+                <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-6 mb-4">
+                    <div class="card product-card h-100">
+                        <img src="img/man/polo-shirt-6.png" class="card-img-top img-fluid" alt="Premium Speaker">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title fs-6 fs-md-5">Premium Speaker</h5>
+                            <p class="text-muted small">360° immersive sound</p>
+                            <div class="mt-auto d-flex justify-content-between align-items-center">
+                                <span class="h6 fw-bold">$199.99</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- Product 4 -->
+                <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-6 mb-4">
+                    <div class="card product-card h-100">
+                        <img src="img/man/polo-shirt-6.png" class="card-img-top img-fluid" alt="Premium Speaker">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title fs-6 fs-md-5">Premium Speaker</h5>
+                            <p class="text-muted small">360° immersive sound</p>
+                            <div class="mt-auto d-flex justify-content-between align-items-center">
+                                <span class="h6 fw-bold">$199.99</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- Product 5 -->
+                <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-6 mb-4">
+                    <div class="card product-card h-100">
+                        <img src="img/man/polo-shirt-6.png" class="card-img-top img-fluid" alt="Ultrabook Pro">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title fs-6 fs-md-5">Ultrabook Pro</h5>
+                            <p class="text-muted small">Lightweight and powerful</p>
+                            <div class="mt-auto d-flex justify-content-between align-items-center">
+                                <span class="h6 fw-bold">$1,299.99</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- Product 6 -->
+                <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-6 mb-4">
+                    <div class="card product-card h-100">
+                        <img src="img/man/polo-shirt-6.png" class="card-img-top img-fluid" alt="DSLR Camera">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title fs-6 fs-md-5">Professional DSLR</h5>
+                            <p class="text-muted small">Capture every moment</p>
+                            <div class="mt-auto d-flex justify-content-between align-items-center">
+                                <span class="h6 fw-bold">$899.99</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- Product 7 -->
+                <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-6 mb-4">
+                    <div class="card product-card h-100">
+                        <img src="img/man/polo-shirt-6.png" class="card-img-top img-fluid" alt="Premium Speaker">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title fs-6 fs-md-5">Premium Speaker</h5>
+                            <p class="text-muted small">360° immersive sound</p>
+                            <div class="mt-auto d-flex justify-content-between align-items-center">
+                                <span class="h6 fw-bold">$199.99</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- Product 8 -->
+                <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-6 mb-4">
+                    <div class="card product-card h-100">
+                        <img src="img/man/polo-shirt-6.png" class="card-img-top img-fluid" alt="Premium Speaker">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title fs-6 fs-md-5">Premium Speaker</h5>
+                            <p class="text-muted small">360° immersive sound</p>
+                            <div class="mt-auto d-flex justify-content-between align-items-center">
+                                <span class="h6 fw-bold">$199.99</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>      </div>
+            <div class="text-center mt-4">
+                <a href="#" class="btn btn-primary">View All Products</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-4 mb-4">
+                    <div class="feature-icon">
+                        <i class="bi bi-truck"></i>
+                    </div>
+                    <h3>Free Shipping</h3>
+                    <p>Free delivery on all orders over $50</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="feature-icon">
+                        <i class="bi bi-arrow-repeat"></i>
+                    </div>
+                    <h3>Easy Returns</h3>
+                    <p>30-day return policy on all items</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="feature-icon">
+                        <i class="bi bi-shield-check"></i>
+                    </div>
+                    <h3>Secure Payment</h3>
+                    <p>Your payment information is protected</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- New Arrivals -->
+    <section class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2>Our Products</h2>
+                <p class="lead fs-6">Discover the talented individuals behind our success. Each member brings unique skills
+                    and passion to our mission.
+                </p>
+            </div>
+            <div class="row">
+                <!-- Product 1 -->
+                <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-6 mb-4">
+                    <div class="card product-card h-100">
+                        <img src="img/man/polo-shirt-6.png" class="card-img-top img-fluid" alt="Ultrabook Pro">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title fs-6 fs-md-5">Ultrabook Pro</h5>
+                            <p class="text-muted small">Lightweight and powerful</p>
+                            <div class="mt-auto d-flex justify-content-between align-items-center">
+                                <span class="h6 fw-bold">$1,299.99</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Product 2 -->
+                <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-6 mb-4">
+                    <div class="card product-card h-100">
+                        <img src="img/man/polo-shirt-6.png" class="card-img-top img-fluid" alt="DSLR Camera">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title fs-6 fs-md-5">Professional DSLR</h5>
+                            <p class="text-muted small">Capture every moment</p>
+                            <div class="mt-auto d-flex justify-content-between align-items-center">
+                                <span class="h6 fw-bold">$899.99</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Product 3 -->
+                <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-6 mb-4">
+                    <div class="card product-card h-100">
+                        <img src="img/man/polo-shirt-6.png" class="card-img-top img-fluid" alt="Premium Speaker">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title fs-6 fs-md-5">Premium Speaker</h5>
+                            <p class="text-muted small">360° immersive sound</p>
+                            <div class="mt-auto d-flex justify-content-between align-items-center">
+                                <span class="h6 fw-bold">$199.99</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Product 4 -->
+                <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-6 mb-4">
+                    <div class="card product-card h-100">
+                        <img src="img/man/polo-shirt-6.png" class="card-img-top img-fluid" alt="Premium Speaker">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title fs-6 fs-md-5">Premium Speaker</h5>
+                            <p class="text-muted small">360° immersive sound</p>
+                            <div class="mt-auto d-flex justify-content-between align-items-center">
+                                <span class="h6 fw-bold">$199.99</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Product 5 -->
+                <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-6 mb-4">
+                    <div class="card product-card h-100">
+                        <img src="img/man/polo-shirt-6.png" class="card-img-top img-fluid" alt="Ultrabook Pro">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title fs-6 fs-md-5">Ultrabook Pro</h5>
+                            <p class="text-muted small">Lightweight and powerful</p>
+                            <div class="mt-auto d-flex justify-content-between align-items-center">
+                                <span class="h6 fw-bold">$1,299.99</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Product 6 -->
+                <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-6 mb-4">
+                    <div class="card product-card h-100">
+                        <img src="img/man/polo-shirt-6.png" class="card-img-top img-fluid" alt="DSLR Camera">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title fs-6 fs-md-5">Professional DSLR</h5>
+                            <p class="text-muted small">Capture every moment</p>
+                            <div class="mt-auto d-flex justify-content-between align-items-center">
+                                <span class="h6 fw-bold">$899.99</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Product 7 -->
+                <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-6 mb-4">
+                    <div class="card product-card h-100">
+                        <img src="img/man/polo-shirt-6.png" class="card-img-top img-fluid" alt="Premium Speaker">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title fs-6 fs-md-5">Premium Speaker</h5>
+                            <p class="text-muted small">360° immersive sound</p>
+                            <div class="mt-auto d-flex justify-content-between align-items-center">
+                                <span class="h6 fw-bold">$199.99</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Product 8 -->
+                <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-6 mb-4">
+                    <div class="card product-card h-100">
+                        <img src="img/man/polo-shirt-6.png" class="card-img-top img-fluid" alt="Premium Speaker">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title fs-6 fs-md-5">Premium Speaker</h5>
+                            <p class="text-muted small">360° immersive sound</p>
+                            <div class="mt-auto d-flex justify-content-between align-items-center">
+                                <span class="h6 fw-bold">$199.99</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <a href="#" class="btn btn-primary">View All Products</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <!-- Contact Form with Map Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row g-4">
+                <!-- Contact Form Column -->
+                <div class="col-lg-6">
+                    <div class="card shadow-sm">
+                        <div class="card-body p-4">
+                            <h2 class="mb-4">Contact Us</h2>
+                            <form>
+                                <div class="row g-3">
+                                    <!-- Name Input -->
+                                    <div class="col-md-6">
+                                        <label for="name" class="form-label">Your Name</label>
+                                        <input type="text" class="form-control" id="name" required>
+                                    </div>
+                                    <!-- Email Input -->
+                                    <div class="col-md-6">
+                                        <label for="email" class="form-label">Email Address</label>
+                                        <input type="email" class="form-control" id="email" required>
+                                    </div>
+                                    <!-- Phone Input -->
+                                    <div class="col-12">
+                                        <label for="phone" class="form-label">Phone Number</label>
+                                        <input type="tel" class="form-control" id="phone">
+                                    </div>
+                                    <!-- Subject Select -->
+                                    <div class="col-12">
+                                        <label for="subject" class="form-label">Subject</label>
+                                        <select class="form-select" id="subject">
+                                            <option selected>Choose...</option>
+                                            <option>General Inquiry</option>
+                                            <option>Product Support</option>
+                                            <option>Billing Question</option>
+                                            <option>Other</option>
+                                        </select>
+                                    </div>
+                                    <!-- Message Textarea -->
+                                    <div class="col-12">
+                                        <label for="message" class="form-label">Message</label>
+                                        <textarea class="form-control" id="message" rows="4" required></textarea>
+                                    </div>
+                                    <!-- Submit Button -->
+                                    <div class="col-12">
+                                        <button type="submit" class="btn btn-primary px-4 py-2">Send Message</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Map Column -->
+                <div class="col-lg-6">
+                    <div class="card shadow-sm h-100">
+                        <div class="card-body p-0">
+                            <div class="ratio ratio-16x9 h-100">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3652.5812283601335!2d90.41098527924143!3d23.72664421505849!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8f824a64333%3A0xef4d022d8cd53c1!2sCity%20Heart%20Tailor!5e0!3m2!1sen!2sbd!4v1722348574491!5m2!1sen!2sbd"
+                                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy">
+                                </iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h5>PremiumShop</h5>
+                    <p>Your one-stop shop for premium electronics and gadgets.</p>
+                    <div class="social-icons">
+                        <a href="#" class="text-white me-2 "><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-white me-2"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="text-white me-2"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="text-white"><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-2 mb-4">
+                    <h5>Shop</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white text-decoration-none">All Products</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Featured</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">New Arrivals</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Sale Items</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2 mb-4">
+                    <h5>About</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white text-decoration-none">Our Story</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Careers</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Terms & Conditions</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5>Contact Us</h5>
+                    <address>
+                        <p><i class="bi bi-geo-alt me-2"></i>102/103/104 Ramna Bhaban (2nd Floor), Dhaka-1000</p>
+                        <p><i class="bi bi-telephone me-2"></i>+880-1715-584441</p>
+                        <p><i class="bi bi-envelope me-2"></i> Cityhearttailor@gmail.com</p>
+                    </address>
+                </div>
+            </div>
+            <hr>
+            <div class="text-center">
+                <p>&copy; 2025 City Heart. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    
+</body>
+</html>
