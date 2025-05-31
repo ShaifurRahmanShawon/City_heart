@@ -91,13 +91,13 @@
 </head>
 <body>
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+    <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
         <div class="container">
             <a class="navbar-brand text-uppercase fw-bold" href="#">City Heart</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="collapse navbar-collapse" id="navbarNav" style="display: flex; justify-content:center;">
                 <ul class="navbar-nav ml-auto fw-bold">
                     <li class="nav-item">
                         <a class="nav-link active" href="#">Home</a>
@@ -117,7 +117,44 @@
                 </div>
             </div>
         </div>
+    </nav> -->
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <div class="container-fluid">
+            <!-- Left: Brand -->
+            <a class="navbar-brand text-uppercase fw-bold me-auto" href="#">City Heart</a>
+
+            <!-- Toggle button for mobile -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Center and Right -->
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <!-- Center: Nav links -->
+                <ul class="navbar-nav fw-bold">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Right: User Icon -->
+            <div class="d-flex ms-auto">
+                <a href="#" class="btn btn-outline-dark"><i class="bi bi-person"></i></a>
+            </div>
+        </div>
     </nav>
+
     
     <!-- Hero Slider -->
     <div id="heroSlider" >
