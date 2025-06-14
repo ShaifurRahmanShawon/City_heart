@@ -8,26 +8,68 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    
     <style>
-        /* Custom styles 
-        .hero-slider {
-            height: 80vh;
-            min-height: 500px;
+        /* ==================== Navbar ==================== */
+        .navbar {
+            backdrop-filter: blur(50px);
+            background-color: rgba(255, 255, 255, 0.231) !important;
+            --bs-navbar-brand-margin-end: 0rem;
         }
-        .hero-slider .carousel-item {
-            height: 100%;
+        .navbar-nav {
+            flex-grow: 1;
+            justify-content: center;
         }
-        .hero-slider img {
-            object-fit: cover;
-            height: 100%;
+        .navbar .d-flex {
+            flex-shrink: 0;
+        }
+        .navbar-nav .nav-link {
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+
+        /* Responsive Navbar Adjustments */
+        @media (max-width: 991px) {
+            .navbar-nav {
+                text-align: center;
+            }
+            .navbar .d-flex {
+                justify-content: center;
+                margin-top: 0.5rem;
+            }
+        }
+
+        /* ==================== Hero Slider ==================== */
+        #heroSlider {
+            position: relative;
             width: 100%;
+            padding-top: 56.25%;
+            background-image: url("img/slider/top-banner-web.jpg");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
         }
-        .hero-slider .carousel-caption {
-            background-color: rgba(0, 0, 0, 0.6);
-            border-radius: 10px;
-            padding: 20px;
-            bottom: 20%;
-        }*/
+        @media screen and (max-width: 720px) {
+            #heroSlider {
+                background-image: url("img/slider/top-banner-mobile.png");
+                height: 100vh;
+                object-fit: cover;
+                object-position: center;
+                margin-top: -56px;
+            }
+        }
+        @media screen and (min-width: 721px) and (max-width: 1024px) {
+            #heroSlider img.Banner-Top {
+                margin-top: -64px;
+            }
+        }
+        @media screen and (min-width: 1025px) {
+            #heroSlider img.Banner-Top {
+                margin-top: -70px;
+            }
+        }
+
+        /* ==================== Product Cards ==================== */
         .product-card {
             transition: transform 0.3s;
             margin-bottom: 20px;
@@ -36,11 +78,15 @@
             transform: translateY(-5px);
             box-shadow: 0 10px 20px rgba(0,0,0,0.1);
         }
+
+        /* ==================== Product Features ==================== */
         .feature-icon {
             font-size: 2.5rem;
             margin-bottom: 1rem;
             color: #0d6efd;
         }
+
+        /* ==================== Product Filter ==================== */
         .product-item {
             transition: opacity 1s ease-in-out;
             opacity: 1;
@@ -55,43 +101,6 @@
             padding: 0;
             overflow: hidden;
         }
-
-        .filter-btn.active {
-            background-color: #212529;
-            color: #fff;
-        }
-
-        .newsletter-section {
-            background-color: #f8f9fa;
-            padding: 0px 0;
-        }
-        footer {
-            padding: 40px 0;
-            /* background-image: url("img/team/Background.jpg"); */
-        }
-        /* Custom CSS for the navbar and hero slider */
-       .navbar {
-            backdrop-filter: blur(50px); /* Blur effect */
-            background-color: rgba(255, 255, 255, 0.231) !important; /* Light background */
-            --bs-navbar-brand-margin-end: 0rem;
-            
-        }
-    
-
-        .navbar-nav {
-            flex-grow: 1;
-            justify-content: center;
-        }
-    
-        .navbar .d-flex {
-            flex-shrink: 0;
-        }
-
-        .navbar-nav .nav-link {
-            padding-left: 1rem;
-            padding-right: 1rem;
-        }
-
         .filter-btn.active {
             background-color: #a3238e;
             color: #fff;
@@ -100,71 +109,53 @@
             --bs-btn-border-color: #03a752;
         }
 
+        /* Filter Scroll Wrapper */
+        .filter-scroll-wrapper {
+            overflow-x: auto;
+            white-space: nowrap;
+            -webkit-overflow-scrolling: touch;
+        }
+        .filter-buttons-container {
+            min-width: max-content;
+            padding-bottom: 5px;
+        }
+
+        /* ==================== Newsletter ==================== */
+        .newsletter-section {
+            background-color: #f8f9fa;
+            padding: 0px 0;
+        }
+
+        /* ==================== Gradient Background Utility ==================== */
         .gradient-background {
             background: linear-gradient(135deg, #C77752, #B0B0B0);
         }
 
-        /*
-        #heroSlider {
-            width: 100%;
-            height: 100vh;
-            min-height: 500px;
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-image: url("img/slider/1.jpg");  Default desktop image 
-        }*/
-
-        /* Responsive image for smaller devices 
-        @media screen and (max-width: 720px) {
-            #heroSlider {
-                background-image: url("img/slider/1.jpg"); Mobile image 
-                
-            }
-        }*/
-        #heroSlider {
+        /* ==================== Footer ==================== */
+        footer {
+            padding: 40px 0;
             position: relative;
+            background-color: #f8f9fa;
+            z-index: 1;
+            overflow: hidden;
+        }
+        footer::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
             width: 100%;
-            padding-top: 56.25%; /* 16:9 Aspect Ratio (9 / 16 = 0.5625 or 56.25%) */
-            background-image: url("img/slider/1.jpg");
-            background-size: contain; /* Show full image */
-            background-repeat: no-repeat;
-            background-position: center;
+            height: 100%;
+            background: url('img/footer/footer-banner.png') no-repeat center center;
+            background-size: cover;
+            opacity: 0.1;
+            z-index: 0;
+        }
+        footer .container {
+            position: relative;
+            z-index: 2;
         }
 
-        @media screen and (max-width: 720px) {
-            #heroSlider {
-                background-image: url("img/slider/1.jpg"); /* Use mobile-optimized version if available */
-                height: 100vh;
-                object-fit: cover;
-                object-position: center;
-                margin-top: -56px;
-            }
-        }
-
-
-        @media screen and (min-width: 721px) and (max-width: 1024px) {
-            #heroSlider img.Banner-Top {
-                margin-top: -64px;
-            }
-        }
-
-        @media screen and (min-width: 1025px) {
-            #heroSlider img.Banner-Top {
-                margin-top: -70px;
-            }
-        }
-
-        /* Navbar adjustments */
-        @media (max-width: 991px) {
-            .navbar-nav {
-                text-align: center;
-            }
-            .navbar .d-flex {
-                justify-content: center;
-                margin-top: 0.5rem;
-            }
-        }
     </style>
 
 </head>
@@ -214,23 +205,25 @@
                 <h2>Our Products</h2>
                 <p class="lead fs-6">Discover the talented individuals behind our success. Each member brings unique skills and passion to our mission.</p>
             </div>
-            <div class="d-flex justify-content-center gap-2 mb-4" role="tablist" aria-label="Product Filter">
-                <button class="btn btn-outline-primary filter-btn active" data-filter="all" aria-pressed="true">All</button>
-                <button class="btn btn-outline-primary filter-btn" data-filter="shirt" aria-pressed="false">Shirt</button>
-                <button class="btn btn-outline-primary filter-btn" data-filter="pant" aria-pressed="false">Pant</button>
-                <button class="btn btn-outline-primary filter-btn" data-filter="suits" aria-pressed="false">Suits</button>
-                <button class="btn btn-outline-primary filter-btn" data-filter="blazers" aria-pressed="false">Blazers</button>
-                <button class="btn btn-outline-primary filter-btn" data-filter="panjabi" aria-pressed="false">Panjabi</button>
-                <button class="btn btn-outline-primary filter-btn" data-filter="mujib-coat" aria-pressed="false">Mujib Coat</button>
-                <button class="btn btn-outline-primary filter-btn" data-filter="prince-coat" aria-pressed="false">Prince Coat</button>
-                <button class="btn btn-outline-primary filter-btn" data-filter="sherwani" aria-pressed="false">Sherwani</button>
-                <button class="btn btn-outline-primary filter-btn" data-filter="payjama" aria-pressed="false">Payjama</button>
-                <button class="btn btn-outline-primary filter-btn" data-filter="coti" aria-pressed="false">Coti</button>
-                <button class="btn btn-outline-primary filter-btn" data-filter="over-coat" aria-pressed="false">Over Coat</button>
-                <button class="btn btn-outline-primary filter-btn" data-filter="safari" aria-pressed="false">Safari</button>
+
+            <!-- Product Button -->
+            <div class="filter-scroll-wrapper mb-4" role="tablist" aria-label="Product Filter">
+                <div class="d-flex flex-nowrap justify-content-start gap-2 filter-buttons-container">
+                    <button class="btn btn-outline-primary filter-btn active" data-filter="all" aria-pressed="true">All</button>
+                    <button class="btn btn-outline-primary filter-btn" data-filter="shirt" aria-pressed="false">Shirt</button>
+                    <button class="btn btn-outline-primary filter-btn" data-filter="pant" aria-pressed="false">Pant</button>
+                    <button class="btn btn-outline-primary filter-btn" data-filter="suits" aria-pressed="false">Suits</button>
+                    <button class="btn btn-outline-primary filter-btn" data-filter="blazers" aria-pressed="false">Blazers</button>
+                    <button class="btn btn-outline-primary filter-btn" data-filter="panjabi" aria-pressed="false">Panjabi</button>
+                    <button class="btn btn-outline-primary filter-btn" data-filter="mujib-coat" aria-pressed="false">Mujib Coat</button>
+                    <button class="btn btn-outline-primary filter-btn" data-filter="prince-coat" aria-pressed="false">Prince Coat</button>
+                    <button class="btn btn-outline-primary filter-btn" data-filter="sherwani" aria-pressed="false">Sherwani</button>
+                    <button class="btn btn-outline-primary filter-btn" data-filter="payjama" aria-pressed="false">Payjama</button>
+                    <button class="btn btn-outline-primary filter-btn" data-filter="coti" aria-pressed="false">Coti</button>
+                    <button class="btn btn-outline-primary filter-btn" data-filter="over-coat" aria-pressed="false">Over Coat</button>
+                    <button class="btn btn-outline-primary filter-btn" data-filter="safari" aria-pressed="false">Safari</button>
+                </div>
             </div>
-
-
             
             <div class="row">
                             
@@ -560,7 +553,6 @@
                 </div>
                 </div>
 
-
             </div>
             <!-- <div class="text-center mt-4">
                 <a href="#" class="btn btn-primary">View All Products</a>
@@ -568,7 +560,6 @@
         </div>
     </section>
 
-    <!-- Newsletter -->
     <!-- Contact Form with Map Section -->
     <section class="py-5">
         <div class="container" >
@@ -643,38 +634,19 @@
     </section>
 
     <!-- Footer -->
-    <footer class="text-white"  style="background-image: url(img/slider/1.jpg);">
-        <div class="container" >
+    <footer class="text-black">
+        <div class="container text-black" >
             <div class="row">
                 <div class="col-md-5 mb-4">
                     <h5>City Herat Tailor</h5>
                     <p>City Heart Tailor – Your trusted destination for expert tailoring, custom fits, and quality craftsmanship. We take pride in delivering stylish, comfortable, and perfectly stitched clothing to match your unique style.</p>
                     <div class="social-icons">
                         <a href="#" class="text-white me-2 "><i class="bi bi-facebook"></i></a>
-                        <!-- <a href="#" class="text-white me-2"><i class="bi bi-twitter"></i></a>
-                        <a href="#" class="text-white me-2"><i class="bi bi-instagram"></i></a>
-                        <a href="#" class="text-white"><i class="bi bi-youtube"></i></a> -->
                     </div>
                 </div>
+                
                 <div class="col-md-2 mb-4"></div>
-                <!-- <div class="col-md-2 mb-4">
-                    <h5>Shop</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="#" class="text-white text-decoration-none">All Products</a></li>
-                        <li><a href="#" class="text-white text-decoration-none">Featured</a></li>
-                        <li><a href="#" class="text-white text-decoration-none">New Arrivals</a></li>
-                        <li><a href="#" class="text-white text-decoration-none">Sale Items</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-2 mb-4">
-                    <h5>About</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="#" class="text-white text-decoration-none">Our Story</a></li>
-                        <li><a href="#" class="text-white text-decoration-none">Careers</a></li>
-                        <li><a href="#" class="text-white text-decoration-none">Terms & Conditions</a></li>
-                        <li><a href="#" class="text-white text-decoration-none">Privacy Policy</a></li>
-                    </ul>
-                </div> -->
+
                 <div class="col-md-5 mb-4">
                     <h5>Contact Us</h5>
                     <address>
